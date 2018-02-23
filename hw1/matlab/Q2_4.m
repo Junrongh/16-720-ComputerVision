@@ -1,0 +1,10 @@
+x = [0 : 0.01 * pi : 2 * pi];
+y1 = 10 * cos(x) + 10 * sin(x);
+y2 = 15 * cos(x) + 15 * sin(x);
+y3 = 30 * cos(x) + 30 * sin(x);
+plot(x, y1, x, y2, x, y3, 'LineWidth', 2);
+xlabel('theta');
+ylabel('rho');
+legend('Point(10, 10)', 'Point(15, 15)', 'Point(30, 30)');
+axis([0, 2 * pi, -50, 50]);
+saveas(gcf, '../results/Q2_4.png');
