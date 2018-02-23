@@ -6,9 +6,9 @@ resultsdir  = '../results'; %the directory for dumping results
 %parameters
 sigma     = 2;
 threshold = 0.1;
-rhoRes    = 2;
-thetaRes  = pi/180;
-nLines    = 800;
+rhoRes    = 1;
+thetaRes  = pi/360;
+nLines    = 500;
 %end of parameters
 
 imglist = dir(sprintf('%s/*.jpg', datadir));

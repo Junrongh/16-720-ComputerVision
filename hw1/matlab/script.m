@@ -1,8 +1,8 @@
 sigma     = 2;
-threshold = 0.03;
-rhoRes    = 2;
-thetaRes  = pi/90;
-nLines    = 50;
+threshold = 0.1;
+rhoRes    = 1;
+thetaRes  = pi/360;
+nLines    = 500;
 
 img = imread('../data/img01.jpg');
 img = double(img) / 255;
@@ -19,4 +19,4 @@ for j=1:numel(lines)
    img2 = drawLine(img2, lines(j).point1, lines(j).point2); 
 end  
 
-imshow(img2)
+imwrite(img2, '../results/img2.png')
